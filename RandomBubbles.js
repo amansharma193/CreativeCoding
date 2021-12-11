@@ -4,10 +4,12 @@ function setup() {
 
 function draw() {
 	// circle(left, top, size)
-	stroke('white');
+	// stroke('white');
 	for(let i=0;i<50;i++){
-		let c=['red','blue','green'];
-		fill(c[randomNumber(0,2)]);
+		let red=randomNumber(256);
+		let blue=randomNumber(256);
+		let green=randomNumber(256);
+		fill(red,blue,green);
 		var x=randomNumber(800);
 		var y=randomNumber(600);	
 		var r=randomNumber(10,100);
